@@ -20,8 +20,6 @@ public class Author {
     @OneToMany(mappedBy = "author", fetch = FetchType.LAZY)
     private List<Book> books;
 
-    // constructors, getters, setters
-
     @Override
     public String toString() {
         return "Author{" +
